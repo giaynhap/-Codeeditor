@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:elevation="10dp"
+        android:theme="@style/AppTheme"
+        app:titleTextColor="@color/primary_text"
+
+        app:popupTheme="@style/AppTheme"/>
+        <EditText
+            android:background="@color/colorPrimary"
+            android:textColor="@color/primary_text"
+            android:layout_width="match_parent"
+            android:id = "@+id/editText"
+            android:layout_weight="0.5"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:scrollbars="vertical"
+            android:minLines="6"
+            android:gravity="top"
+            android:privateImeOptions="nm"
+            android:layout_height="match_parent" />
+</LinearLayout>

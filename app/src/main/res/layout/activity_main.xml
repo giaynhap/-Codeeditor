@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.imac.coderediter.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:elevation="10dp"
+        android:theme="@style/AppTheme"
+        app:titleTextColor="@color/primary_text"
+
+        app:popupTheme="@style/AppTheme"/>
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" >
+
+        <com.example.imac.coderediter.UI.EditorControl
+            android:id = "@+id/editText"
+            android:layout_weight="0.5"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:minLines="6"
+            android:gravity="top"
+            android:privateImeOptions="nm"
+            app:rowBgColor="@color/colorPrimary"
+
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
